@@ -2,23 +2,135 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoja de vida</title>
+    <style>
+        body {
+    background-color:rgb(141, 208, 226); 
+  }
+  
+  body {
+    background-color: rgba(131, 206, 247, 0.922);
+  }
+  
+ 
+img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .imagen-marco {
+    width: 200px; 
+    height: 200px; 
+    overflow: hidden; 
+    border: 2px solid rgb(0, 0, 0);
+  }
+  
+  .tabla-con-bordes,
+.otra-clase-de-tabla-con-bordes {
+  width: 50%;
+  border-collapse: collapse; 
+}
+
+
+.tabla-con-bordes th,
+.tabla-con-bordes td {
+  border: 1px solid #000; 
+  padding: 8px;
+}
+
+.otra-clase-de-tabla-con-bordes th,
+.otra-clase-de-tabla-con-bordes td {
+  border: 1px solid #000; 
+  padding: 8px; 
+}
+
+.formulario-de-contacto {
+    max-width: 300px; 
+    margin: 0 auto; 
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.campo {
+    margin-bottom: 5px; 
+}
+
+label {
+    display: block; 
+    
+   
+margin-bottom: 3px; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 30%;  
+    padding: 8px;  
+border: 1px solid rgb(198, 169, 169);   
+border-radius: 3px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical; 
+}
+
+.boton {
+text-align: center;  
+margin-top: 5px; 
+}
+
+button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 15px;
+    
+   
+font-size: 14px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+ 
+.enlaces {
+    margin-left: 20px; 
+  }
+  
+  a {
+    text-decoration: none; 
+    margin-right: 10px; 
+  }
+
+    </style>
+</head>
+<body>
     <h1>Edy Natalia Cardenas Saavedra</h1>
-    <img src="file:///C:/Users/nc279/Downloads/nat.png" width="200" height="200" alt="">
+    <div class="imagen-marco">
+    <img src="file:///C:/Users/nc279/Downloads/nat.png" alt="imagen">
+    </div>
     <p>Email: nc279797@gmail.com</p>
     <p>Teléfono: +573112215395</p>
     <p>Ubicacion: Coromoro,Santander,Colombia</p>
-    <p><a href="https://github.com/Edycardenas29" target="_blank">Perfil GitHub</a></p>
+    <div class="enlaces">
+    <p><a href="https://github.com/Edycardenas29" target="_blank">GitHub</a></p>
     <p><a href="https://www.linkedin.com/in/natalia-cardenas-102662256/" target="_blank">Perfil LinkedIn</a></p>
-
+    </div>
     <h2>Experiencia</h2>
     <ul>
       <li>2022-2023: Encargada area de tecnologia cafecor por proyecto formativo</li>  
   </ul>
 
   <h2>Habilidades Técnicas</h2>
-<table>
+<table class="tabla-con-bordes">
     <tr>
         <th>Habilidad</th>
         <th>Nivel</th>
@@ -42,7 +154,7 @@
 </table>
 
 <h2>Intereses</h2>
-<table>
+<table class="otra-clase-de-tabla-con-bordes">
     <tr>
         <th>Leer</th>
     </tr>
@@ -56,6 +168,7 @@
         <th>Montar bicicleta</th>
     </tr>    
 </table>
+
 <form action="#" method="post">
     <label for="email">Email:</label>
     <input type="email" id="email" name="user_email">
@@ -65,8 +178,7 @@
  
     <input type="submit" value="Contactar">
  </form>
-</head>
-<body>
-    
 </body>
 </html>
+
+
